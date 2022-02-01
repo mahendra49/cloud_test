@@ -1,0 +1,51 @@
+<html>
+<head>
+   <style type="text/css">
+      body {background-color: coral;
+
+
+         max-width: 500px;
+         margin: auto;
+
+
+      }
+   </style>
+</head>
+<body>
+<form action="/loginValidation" method="post">
+   <center><h3>
+    <div class="container">
+     {% if error %}
+    <p style="color:red";>{{ error }}</p>
+    {% endif %}<br>
+    
+    {% if message %}
+    <p style="color:blue";>{{ message }}</p>
+    {% endif %}<br>
+
+
+    <label for="uname"><b>Username </b></label>
+    <input type="text" name="uname" required><br><br>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" name="psw" required><br><br>
+
+    <button type="submit">Login</button>
+    </div>
+
+     <div class="container register">
+
+     </br>
+     </br>
+     </br>
+     </br>
+     </br>
+
+    <a href="/register">Registration or Sign Up</a>
+  </div>
+</h3>
+</center>
+
+</form>
+</body>
+</html>
